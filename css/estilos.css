@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Helvetica', Arial, sans-serif;
+    background: rgb(238, 225, 225);
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+
+
+/*cabeçalho*/
+}
+
+.texto-branco, #cabecalho a:link, #cabecalho a:visited {
+    color: #FFF;
+}
+
+#cabecalho a:link, #cabecalho a:visited {
+    font-size: 1.2em;
+    padding: 15px 25px;   
+}
+
+#cabecalho a:hover,  
+#cabecalho a:active,
+body.home #cabecalho a#home,
+body.jogos #cabecalho a#jogos,
+body.animesMangas #cabecalho a#animesMangas,
+body.cosplays #cabecalho a#cosplays,
+body.sobre #cabecalho a#sobre {
+    background: #FFF;
+    color: rgba(211, 54, 54, 0.815);
+
+}
+
+#cabecalho {
+    background: rgba(211, 54, 54, 0.815);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+#menu ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#menu{
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#logo, #menu {
+    padding: 25px;
+}
+#logo{
+    margin: auto;
+}
+
+
+
+/*conteudo*/
+
+/*texto*/
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    color: grey;
+    background: gainsboro;
+    padding: 5px;
+}
+
+a:link, a:visited, h2{
+    color: rgba(211, 54, 54, 0.815);
+}
+
+a:hover, a:active {
+    background: rgba(151, 190, 240, 0.842); /*130,175,233*/
+}
+
+.texto-pequeno {
+    font-size: 0.8em;
+}
+
+.postagem-sobre-texto span{
+    font-weight: bold;
+}
+
+/*container*/
+
+#container-conteudo {
+    max-width: 1080px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+/*formatação imagens*/
+#area-post img, iframe {
+    max-width: 540px;
+    padding: 0px;
+    margin: 15px;
+}
+
+.aumentaImagem {
+    width: 500px;
+
+}
+/*formatação area post*/
+
+#area-post {
+    width: 600px;
+
+}
+.area-post-sobre {
+    max-width: 920px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.sobre-italico{
+    font-style: italic;
+    font-size: 0.9em
+}
+
+
+#area-post, #area-lateral, .area-post-sobre {
+    background: rgb(218, 215, 215);
+    padding: 10px;
+    border: 2px groove rgba(0, 0, 0, 0.884); /*77, 46, 35, 0.507*/
+    border-radius: 0.75%
+}
+.postagens, .postagens-sobre {
+    border: solid 1px gainsboro;
+    background:rgba(247, 244, 237, 0.508);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.postagens-sobre{
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    flex: 2 1 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.postagem-sobre-texto{
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    flex: 1 1 400px;
+}
+.postagem-sobre-imagem img{
+    width: 90%;
+    max-width: 200px;
+    border: 1px groove rgba(211, 54, 54, 0.815);
+    border-radius: 70%;
+}
+.postagem-sobre-imagem{
+    flex: 1 1 100px;
+}
+
+
+.texto-post {
+    max-width: 540px;
+    font-size: 0.9em;
+    margin: 5px 15px;
+}
+
+
+/*formatação area lateral*/
+#area-lateral {
+    width: 240px;
+    margin: 0px 10px;
+}
+
+#area-lateral p, #area-lateral a {
+    margin-left: 5px;
+}
+
+#resultado-voto{
+    max-width: 200px;
+}
+
+
+.info-lateral {
+    border: solid 1px gainsboro;
+    background:rgba(247, 244, 237, 0.508);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 10px 5px;
+}
+
+ul {
+    margin: 5px 15px;
+    color: rgba(211, 54, 54, 0.815);
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px){
+    h1{
+        font-size: 2.5em;
+    }
+    #area-lateral {
+        width: 400px;
+        margin: 10px 10px;
+    }
+    .postagem-sobre{
+        width: 80%;
+    }
+    #menu ul li{
+        margin: 20px auto;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    
+    h1{
+        font-size: 2.5em;
+    }
+    #menu ul{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #menu ul li a:link, #cabecalho a:visited {
+        font-size: 1.2em;
+        
+    }
+
+    #menu li{
+        margin-bottom: 20px;
+    }
+    
+    #area-post {
+        max-width: 400px;
+    
+    }
+    #area-post img {
+        max-width: 300px;
+        padding: 15px 0px;
+    }
+    #area-lateral {
+        width: 400px;
+        margin: 10px 10px;
+    }
+    .area-post-sobre{
+        max-width: 420px;
+    }
+    .postagem-sobre{
+        max-width: 400px;
+    }
+    .postagem-sobre-texto{
+        max-width: 300px;
+    }
+    iframe{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+
+
+
+/*rodapé*/
+
+
+#rodape {
+    color: gray;
+    background: gainsboro;
+    text-align: center;
+    padding: 15px;
+    margin: 10px auto;
+    margin-bottom: 0;
+}
